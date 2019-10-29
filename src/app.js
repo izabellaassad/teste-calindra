@@ -4,8 +4,8 @@ const axios = require("axios");
 const app = express();
 
 async function buscarDados(endereco) {
-  const apiKey = "AIzaSyBDow-0L38r53OTg4sMeJrF-NQ7En5Qhc8";
-  const URL = {}; //Adicione sua chave
+  const apiKey =  {}; //Adicione sua chave
+  const URL = {};
 
   const requisicao = await axios.get(URL);
   const requisicaoDados = await requisicao.data;
