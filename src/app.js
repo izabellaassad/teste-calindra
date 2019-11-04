@@ -5,7 +5,7 @@ const app = express();
 
 async function buscarDados(endereco) {
   const apiKey =  {}; //Adicione sua chave
-  const URL = {};
+  const URL = {"https://maps.googleapis.com/maps/api/geocode/json?address=${endereco}&key=${apiKey}"};
 
   const requisicao = await axios.get(URL);
   const requisicaoDados = await requisicao.data;
